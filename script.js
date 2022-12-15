@@ -101,7 +101,9 @@ const getData = async(url) => {
 }
 
 
-getData(`http://46.21.248.81:3001/my-users`).then((data) => {
+getData(`https://polinashneider.space/user`
+    /*`http://46.21.248.81:3001/my-users`*/
+).then((data) => {
     console.log(data);
 });
 sendForm();
