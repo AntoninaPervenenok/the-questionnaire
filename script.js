@@ -81,8 +81,8 @@ const sendForm = () => {
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        sendData(`https://polinashneider.space/user`
-                /*`http://46.21.248.81:3001/user`*/
+        sendData( /*`https://polinashneider.space/user`*/
+                `http://46.21.248.81:3001/user`
             )
             .then(() => {
                 form.reset();
@@ -101,8 +101,8 @@ const getData = async(url) => {
 }
 
 
-getData(`https://polinashneider.space/user`
-    /*`http://46.21.248.81:3001/my-users`*/
+getData( /*`https://polinashneider.space/user`*/
+    `http://46.21.248.81:3001/my-users`
 ).then((data) => {
     console.log(data);
 });
